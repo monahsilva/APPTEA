@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.monal.appmona">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <action android:name="android.intent.action.CUSTOM" />
+        </activity>
+        <activity
+            android:name=".telalogin"
+            android:label="@string/title_activity_telalogin" />
+        <activity
+            android:name=".telatres"
+            android:label="@string/title_activity_telatres"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+    </application>
+
+</manifest>
